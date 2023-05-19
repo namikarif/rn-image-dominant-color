@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'rn-image-dominant-color';
+import { StyleSheet, Text, View } from 'react-native';
+import { getDominantColor } from 'rn-image-dominant-color';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    getDominantColor('https://app.disnot.co/namik.jpeg').then(setResult);
   }, []);
 
   return (
