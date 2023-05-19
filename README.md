@@ -11,11 +11,11 @@ npm install rn-image-dominant-color
 ## Usage
 
 ```js
-import { multiply } from 'rn-image-dominant-color';
+import { getDominantColor } from 'rn-image-dominant-color';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await getDominantColor('imagePath or ImageUri');
 ```
 
 ## Contributing
