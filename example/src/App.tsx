@@ -7,7 +7,7 @@ export default function App() {
   const [result, setResult] = React.useState<string | undefined>();
 
   React.useEffect(() => {
-    getDominantColor('https://app.disnot.co/namik.jpeg').then(setResult);
+    getDominantColor('https://namikarifoglu.com/namik.jpeg').then(setResult);
   }, []);
 
   return (
